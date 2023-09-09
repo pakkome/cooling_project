@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Include Bootstrap CSS from a single source -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Include Bootstrap JavaScript and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link href="{%static 'css/styles.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    {% block title %}
+    {% endblock %}
+</head>
+
+
+<body>
+
+    <div class="frame">
+        <!-- <div class="plane-container">
+        <a href="http://customer.io/" target="_blank">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
+        xml:space="preserve" class="plane">
+        <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  "/>
+        <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   "/>
+        </svg></a>
+        
+        </div> -->
+        </div>
+        <div class="clouds">
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud big front slowest">
+        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+        </svg>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant smaller">
+        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+        </svg>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud small slow">
+        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+        </svg>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant super-slow massive">
+        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+        </svg>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud slower">
+        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+        </svg>
+        </div>
+
+
+      <nav class="navbar bg-body-tertiary fixed-top" style="z-index: 1000;">
+        <div class="container-fluid">
+          <img class="navbar-brand" src="/static/assets/img/logo_3.png" alt="Company Logo" style="max-width: 100px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Maintenance System</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              
+              <div class="circle_sun">
+              <div id="circle_container">
+                <div id="stars"></div>
+                <div id="load_wrapper">
+                  <div id="sun"></div>
+                  <div id="moon"></div>
+                </div>
+              </div>
+            </div>
+
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                {% if user.is_authenticated %}
+                <a class="username" href="#">
+                  <span>❥ {{ user.username }}</span>
+                </a>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'coolingapp:index' %}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'coolingapp:dashboard' %}"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-area-chart" aria-hidden="true"></i> Prediction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'coolingapp:maintenance' %}"><i class="fa fa-wrench" aria-hidden="true"></i> Maintenance Request</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'coolingapp:workpermit' %}"><i class="fa fa-cloud" aria-hidden="true"></i> Work Permit</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'coolingapp:about' %}"><i class="fa fa-user" aria-hidden="true"></i> Technician</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>  My Account 
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-bell" aria-hidden="true"></i> Alert</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-calendar" aria-hidden="true"></i></i> Calendar</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Profile</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'coolingapp:logout' %}"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-login">
+                  <a class="nav-login" href="{% url 'coolingapp:login' %}"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Login</a>
+                </li>
+                <li class="nav-register">
+                  <a class="nav-register" href="{% url 'coolingapp:register' %}"><i class="fa fa-pencil" aria-hidden="true"></i> Register</a>
+                </li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script>
+        function getRandom (size)
+        {
+          return Math.floor(Math.random() * size);
+        }
+
+        //Creating the layers for the stars
+        for (i = 2; i < 12; i++)
+        {
+          $("#stars").append('<div class="star_layer" style="transform: translateZ(' + i + 'px) scale(' + (15 - i)/(15) +');"></div>')
+        }
+
+        //Creating the stars
+        for (i = 0; i < 70; i++)
+        {
+          $(".star_layer").eq(getRandom(10)).append('<div class="star"></div>');
+        }
+
+        updateStars();
+
+        //Change stars every cycle
+        setInterval(updateStars, 4000);
+
+        //Randomising stars. Position and opacity is changed every cycle.
+        function updateStars ()
+        {
+          $(".star").each(function() {
+            $(this).css({"top": getRandom(200) + "px", "left": getRandom(200) + "px", "opacity": (20 + getRandom(50))/100});
+          });
+        }
+    </script>
+    <script>
+      const togglerButton = document.querySelector(".navbar-toggler");
+const offcanvasNavbar = document.querySelector("#offcanvasNavbar");
+
+// Add an event listener to the toggler button
+togglerButton.addEventListener("click", () => {
+    if (!offcanvasNavbar.classList.contains("show")) {
+        // When the button is clicked and the offcanvas is not shown
+        offcanvasNavbar.style.top = "66px"; // Adjust the top position as needed
+    } else {
+        // When the offcanvas is already shown
+        offcanvasNavbar.style.top = "0";
+    }
+});
+    </script>
+    <!-- <script src="static/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>Login</title>
+{% endblock %}
+
+{% block content %}
+<section class="content-section content-section-single">
+    <div class="content-container">
+            <h1 class="content-title">Login</h1>
+            <form action="{% url 'coolingapp:login' %}" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                </div>
+                <p>
+                <button type="submit" class="btn btn-primary">Login</button>
+                </p>
+            </form>
+    </div>
+    </section>
+{% endblock %}
